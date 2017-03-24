@@ -82,6 +82,10 @@ public class Car {
 	public void setPrice(long newPrice) {
 		price = newPrice;
 	}
+	
+	public void dummy(){
+		
+	}
 
 	
 	

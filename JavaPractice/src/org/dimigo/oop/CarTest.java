@@ -63,6 +63,8 @@ public class CarTest {
 		System.out.println("Max Speed : " + c3.getMaxSpeed() + " km");
 		System.out.printf("Price : %,d won", c3.getPrice());
 		
+		c1.dummy();
+		
 	}
 
 }
