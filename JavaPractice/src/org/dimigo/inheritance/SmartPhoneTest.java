@@ -12,7 +12,7 @@ public class SmartPhoneTest {
 			System.out.println(s);
 			s.turnOn();
 			s.pay();
-			s.useSpecialFunction(s);
+			s.useSpecialFunction();
 			s.turnOff();
 			System.out.println();
 		}
