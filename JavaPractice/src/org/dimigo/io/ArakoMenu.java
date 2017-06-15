@@ -27,6 +27,7 @@ public class ArakoMenu {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println();
 		}
 	}
 
