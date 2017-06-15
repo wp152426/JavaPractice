@@ -11,8 +11,8 @@ public class ArakoMenu {
 
 	public static void main(String[] args) {
 		try (BufferedReader is = new BufferedReader( new InputStreamReader(System.in));
-				Writer writer = new BufferedWriter(new FileWriter("C:/Users/임형준/Desktop/IoTest.txt"));
-				BufferedReader br = new BufferedReader(new FileReader("C:/Users/임형준/Desktop/IoTest.txt"))) {
+				Writer writer = new BufferedWriter(new FileWriter("files/menu.txt"));
+				BufferedReader br = new BufferedReader(new FileReader("files/menu.txt"))) {
 			
 			String str;
 			while((str = is.readLine()) != null){
