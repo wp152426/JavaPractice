@@ -10,17 +10,22 @@ import java.io.Writer;
 public class ArakoMenu {
 
 	public static void main(String[] args) {
-		try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		try (BufferedReader is = new BufferedReader( new InputStreamReader(System.in));
 				Writer writer = new BufferedWriter(new FileWriter("C:/Users/임형준/Desktop/IoTest.txt"));
-				BufferedReader reader = new BufferedReader(new FileReader("C:/Users/임형준/Desktop/IoTest.txt"))){
-			
-			
-			writer.flush();
+				BufferedReader br = new BufferedReader(new FileReader("C:/Users/임형준/Desktop/IoTest.txt"))) {
 			
 			String str;
-			System.out.println("<<메뉴 출력>>");
+			while((str = is.readLine()) != null){
+				writer.write(str + "\n");
+				writer.flush();
+			}
 			
-		}catch(Exception e){
+			System.out.println("<<메뉴 출력>>");
+			while((str = br.readLine()) != null){
+				System.out.println(str);
+			}
+			
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
